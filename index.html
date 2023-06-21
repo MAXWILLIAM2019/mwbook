@@ -20,7 +20,7 @@
   <header class="cabeçalho">
     <div class="container">
       <input type="checkbox" id="menu" class="container__botao" />
-      <label for="menu">
+      <label for="menu" class="container__rotulo">
         <span class="cabeçalho__menu-hamburguer container__imagem"></span>
       </label>
       <ul class="lista-menu">
@@ -47,7 +47,7 @@
 
     <ul class="opcoes">
       <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
-      <label for="opcoes-menu">
+      <label for="opcoes-menu" class="opcoes__rotulo">
         <li class="opcoes__item">Categorias</li>
       </label>
       <ul class="lista-menu">
@@ -94,68 +94,137 @@
     <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?" />
   </section>
   <section class="carrossel">
-    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <h2 class="carrossel__titulo">Novos Lançamentos</h2>
     <!-- Slider main container -->
-    <div class="swiper">
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <img src="img/Acessibilidade.svg" alt="Acessibilidade" />
+    <div class="carrossel__container">
+      <div class="swiper">
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="img/Acessibilidade.svg" alt="Acessibilidade" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/ApacheKafka.svg" alt="ApacheKafka" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Arquitetura.svg" alt="Arquitetura" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/MetricasAgeis.svg" alt="MetricasAgeis" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Nodejs.svg" alt="Nodejs" />
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img src="img/ApacheKafka.svg" alt="ApacheKafka" />
-        </div>
-        <div class="swiper-slide">
-          <img src="img/Arquitetura.svg" alt="Arquitetura" />
-        </div>
-        <div class="swiper-slide">
-          <img src="img/MetricasAgeis.svg" alt="MetricasAgeis" />
-        </div>
-        <div class="swiper-slide">
-          <img src="img/Nodejs.svg" alt="Nodejs" />
-        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
       </div>
 
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-      <!-- If we need scrollbar -->
-      <!-- <div class="swiper-scrollbar"></div> -->
-    </div>
-
-    <div class="card">
-      <!--  1ª linha -->
-      <div class="card__descricao">
-        <!-- 1ª coluna -->
-        <div class="descricao">
-          <h3 class="descricao__titulo">Talvez você se interesse também por...</h3>
-          <h2 class="descricao__titulo-livro">Angular 11 com firebase</h2>
-          <p class="descricao__texto">Contruindo uma aplicação integrada com a plataforma AmazonWebServices em Cloud.
-          </p>
+      <div class="card">
+        <!--  1ª linha -->
+        <div class="card__descricao">
+          <!-- 1ª coluna -->
+          <div class="descricao">
+            <h3 class="descricao__titulo">Talvez você se interesse também por...</h3>
+            <h2 class="descricao__titulo-livro">Angular 11 com firebase</h2>
+            <p class="descricao__texto">Contruindo uma aplicação integrada com a plataforma AmazonWebServices em Cloud.
+            </p>
+          </div>
+          <!-- 2ª coluna -->
+          <img src="img/angular.svg" class="descricao__imagem">
         </div>
-        <!-- 2ª coluna -->
-        <img src="img/angular.svg" class="descricao__imagem">
-      </div>
-      <!-- 2ª linha -->
-      <div class="card__botoes">
-        <!-- 1ª coluna -->
-        <ul class="botoes">
-          <li class="botoes__item">
-            <img src="img/favorito.svg" alt="Favoritos">
-          </li>
-          <li class="botoes__item">
-            <img src="img/compras.svg" alt="compras">
-          </li>
-        </ul>
-        <!-- 2ª coluna -->
-        <a href="#" class="botoes__ancora">Saiba Mais!</a>
+        <!-- 2ª linha -->
+        <div class="card__botoes">
+          <!-- 1ª coluna -->
+          <ul class="botoes">
+            <li class="botoes__item">
+              <img src="img/favorito.svg" alt="Favoritos">
+            </li>
+            <li class="botoes__item">
+              <img src="img/compras.svg" alt="compras">
+            </li>
+          </ul>
+          <!-- 2ª coluna -->
+          <a href="#" class="botoes__ancora">Saiba Mais!</a>
+        </div>
       </div>
     </div>
   </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Mais Vendidos</h2>
+    <!-- Slider main container -->
+    <div class="carrossel__container">
+      <div class="swiper">
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="img/Acessibilidade.svg" alt="Acessibilidade" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/ApacheKafka.svg" alt="ApacheKafka" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Arquitetura.svg" alt="Arquitetura" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/MetricasAgeis.svg" alt="MetricasAgeis" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Nodejs.svg" alt="Nodejs" />
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+
+      <div class="card">
+        <!--  1ª linha -->
+        <div class="card__descricao">
+          <!-- 1ª coluna -->
+          <div class="descricao">
+            <h3 class="descricao__titulo">Autor do Mês</h3>
+            <h2 class="descricao__titulo-livro">Max William</h2>
+            <p class="descricao__texto">Contruindo uma aplicação integrada com a plataforma AmazonWebServices em Cloud.
+            </p>
+          </div>
+          <!-- 2ª coluna -->
+          <img src="img/angular.svg" class="descricao__imagem">
+        </div>
+        <!-- 2ª linha -->
+        <div class="card__botoes">
+          <!-- 1ª coluna -->
+          <ul class="botoes">
+            <li class="botoes__item">
+              <img src="img/favorito.svg" alt="Favoritos">
+            </li>
+            <li class="botoes__item">
+              <img src="img/compras.svg" alt="compras">
+            </li>
+          </ul>
+          <!-- 2ª coluna -->
+          <a href="#" class="botoes__ancora">Saiba Mais!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="topicos">
     <h2 class="topicos__titulo">VISITADOS RECENTEMENTE</h2>
     <ul class="topicos__lista">
